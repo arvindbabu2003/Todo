@@ -1,0 +1,11 @@
+.add-card { padding: 12px; margin-bottom: 12px; }
+.row { display:flex; gap:12px; align-items:flex-start; }
+.flex { flex:1; }
+.full { width:100%; }
+.w-150 { width:150px; }
+.w-200 { width:200px; }
+.actions { margin-top:8px; display:flex; justify-content:flex-end; }
+@media (max-width:600px) {
+  .row { flex-direction:column; }
+  .w-150, .w-200 { width:100%; }
+}

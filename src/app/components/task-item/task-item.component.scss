@@ -1,0 +1,6 @@
+.content { margin-left: 12px; display:flex; flex-direction:column; }
+.title-row { display:flex; gap:8px; align-items:center; }
+.completed { text-decoration: line-through; color: rgba(0,0,0,0.45); }
+.desc { color: rgba(0,0,0,0.6); font-size: 14px; }
+.spacer { flex:1; }
+mat-list-item { align-items:flex-start; }

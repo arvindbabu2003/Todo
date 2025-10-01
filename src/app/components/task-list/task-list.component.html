@@ -1,0 +1,15 @@
+<mat-card>
+  <mat-list>
+    <ng-container *ngIf="tasks$ | async as tasks; else loading">
+      <ng-container *ngIf="tasks.length; else empty">
+        <app-task-item *ngFor="let t of tasks" [task]="t"></app-task-item>
+      </ng-container>
+    </ng-container>
+  </mat-list>
+  <ng-template #loading>
+    <mat-card-content>Loading tasks...</mat-card-content>
+  </ng-template>
+  <ng-template #empty>
+    <mat-card-content>No tasks yet. Add one!</mat-card-content>
+  </ng-template>
+</mat-card>
