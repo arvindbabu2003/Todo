@@ -1,14 +1,58 @@
 # TodoApp
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3.
+# Angular Firebase To-Do App
+
+A simple **To-Do application** built with **Angular**, **Angular Material**, and **Firebase Firestore**.  
+Supports adding, deleting, completing tasks, and sorting/filtering by category, priority, and date.
+
+---
+
+## Features
+
+- Add tasks with:
+  - Title
+  - Description (optional)
+  - Category (optional)
+  - Priority (1-High, 2-Medium, 3-Low)
+  - Due Date (optional)
+- Real-time updates using **Firebase Firestore**
+- Mark tasks as completed/uncompleted
+- Delete tasks
+- Filter tasks by category
+- Sort tasks by priority or creation date
+- Responsive design using Angular Material
+
+---
+
+## Tech Stack
+
+- **Angular 20** (Standalone Components)
+- **Angular Material**
+- **Firebase Firestore**
+- **RxJS** for state management
+- **Vite** as dev server
+
+---
+
+## Installation
+
+1. Clone the repo:
+
+```bash```
+git clone https://github.com/arvindbabu2003/Todo.git
+cd Todo
+
+## Install dependencies
+
+npm install
 
 ## Development server
 
 To start a local development server, run:
 
-```bash
+```bash```
 ng serve
-```
+
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
@@ -43,17 +87,3 @@ To execute unit tests with the [Karma](https://karma-runner.github.io) test runn
 ```bash
 ng test
 ```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
