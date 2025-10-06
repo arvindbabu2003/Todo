@@ -1,3 +1,5 @@
+// src/app/app.component.ts
+
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -17,8 +19,9 @@ import { TaskListComponent } from './components/task-list/task-list.component';
   ],
   template: `
     <mat-toolbar color="primary" class="toolbar">
-      <span class="app-title">Todo App</span>
+      <img src="todo-logo.jpg" alt="Todo App Logo" class="app-logo">
     </mat-toolbar>
+    
     <div class="app-container">
       <mat-card class="add-task-card">
         <mat-card-header>
@@ -43,6 +46,12 @@ import { TaskListComponent } from './components/task-list/task-list.component';
       position: sticky;
       top: 0;
       z-index: 1000;
+      display: flex;
+      align-items: center;
+    }
+    .app-logo {
+      height: 40px;
+      margin-right: 12px;
     }
     .app-title {
       font-size: 1.5em;

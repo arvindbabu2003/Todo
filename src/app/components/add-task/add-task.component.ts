@@ -58,9 +58,7 @@ export class AddTaskComponent {
 
     let finalDueDate: Date | undefined;
 
-    // ✅ FIX: Convert the 'YYYY-MM-DD' string to a Date object.
-    // By appending 'T00:00:00', we force it to be treated as local time
-    // at midnight, preventing off-by-one day issues caused by UTC conversion.
+   
     if (this.dueDate) {
       finalDueDate = new Date(`${this.dueDate}T00:00:00`);
     } else {
@@ -78,7 +76,6 @@ export class AddTaskComponent {
 
     try {
       await this.taskService.addTask(newTask);
-      // Clear form fields
       this.title = '';
       this.description = '';
       this.category = '';
@@ -86,7 +83,6 @@ export class AddTaskComponent {
       this.dueDate = '';
     } catch (err) {
       console.error('Add task error:', err);
-      // You should also show a user-friendly error notification here (e.g., MatSnackBar)
     }
   }
 }

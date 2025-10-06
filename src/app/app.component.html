@@ -1,10 +1,31 @@
-<mat-toolbar color="primary">
-  <span>Angular To-Do</span>
-  <span class="fill"></span>
-  <span class="sm">Manage tasks • Firebase Firestore • Material</span>
+<mat-toolbar color="primary" class="app-header">
+    <img src="todo-logo.jpg" alt="Todo App Logo" class="app-logo">
+
+
+    <span class="fill"></span>
+    <span class="sm">Manage tasks • Firebase Firestore • Material</span>
 </mat-toolbar>
 
-<div class="container">
-  <app-add-task></app-add-task>
-  <app-task-list></app-task-list>
+<div class="main-content">
+    <div class="container">
+        
+        <mat-card class="form-card">
+            <mat-card-header>
+                <mat-card-title>Add a New Task</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <app-add-task></app-add-task>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="list-card">
+            <mat-card-header>
+                <mat-card-title>My Tasks</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <app-task-list></app-task-list>
+            </mat-card-content>
+        </mat-card>
+
+    </div>
 </div>
